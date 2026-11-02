@@ -1,4 +1,10 @@
 # 暗路明察 技术报告同版代码
+
+## GitHub 下载说明
+本仓库与技术报告对应的源代码保持一致。三个较大的已验收编译产物（ABI32 ELF、ABI30 BOOT.BIN及SD ELF）放在 [Release](https://github.com/terrelongethena394-oss/night-road-vision/releases/tag/report-abi32-20261101) 中，下载地址和SHA256见 docs/published_artifacts.json。
+克隆或下载源码后，先运行 python docs/restore_release_artifacts.py 恢复这三个文件，再运行 python docs/verify_release.py 检查完整快照。也可按JSON清单手动下载并放回相应路径。
+原本地RAR代码包的完整性清单另存于 docs/local_release_manifest.json；GitHub版本仅增加下载说明及清单，算法、模型与GUI运行源码未改动。
+
 本地整理日期：2026-11-02。主运行版本 ABI32，自然增强与照片/摄像头工作台；SD 独立演示版本 ABI30。与2026-11-01实物完善版及中英文文献补充版技术报告一致。
 
 ## 目录

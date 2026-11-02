@@ -1,0 +1,9 @@
+road_fp32.c:9:13:road_poll_service	0	static
+road_fp32.c:134:12:compare_boxes	0	static
+road_fp32.c:8:6:road_set_service	0	static
+road_fp32.c:34:6:road_preprocess400	64	static
+road_fp32.c:46:6:road_input320	12	static
+road_fp32.c:87:5:road_forward	224	static
+road_fp32.c:120:6:road_decode	120	static
+road_fp32.c:148:5:road_nms	6416	static
+road_fp32.c:167:6:road_boxes_to400	40	static

@@ -1,0 +1,3 @@
+ov5640_init.c:28:6:sccb_write_reg16	16	static
+ov5640_init.c:48:4:sccb_read_reg16	8	static
+ov5640_init.c:78:4:ov5640_init	32	static

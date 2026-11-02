@@ -1,0 +1,5 @@
+road_camera_main.c:49:13:fatal	8	static
+road_camera_main.c:50:13:present	152	static
+road_camera_main.c:59:13:preview	48	static
+road_camera_main.c:80:13:service	48	static
+road_camera_main.c:170:5:main	232	static

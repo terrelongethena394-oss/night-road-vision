@@ -1,0 +1,60 @@
+/* Deterministic vehicle-only multi-view fusion. GPL-3.0 detector types. */
+#include "road_vehicle_multiview.h"
+#include <math.h>
+#include <stdlib.h>
+typedef struct {RoadBox b;int order;} Row;
+static Row rows[1200],final_rows[300];
+static RoadBox persons[300];
+static unsigned char dead[1200];
+static float lo(float a,float b){return a<b?a:b;}
+static float hi(float a,float b){return a>b?a:b;}
+static float area(const RoadBox *a){return hi(0.f,a->x2-a->x1)*hi(0.f,a->y2-a->y1);}
+static float inter(const RoadBox *a,const RoadBox *b){return hi(0.f,lo(a->x2,b->x2)-hi(a->x1,b->x1))*hi(0.f,lo(a->y2,b->y2)-hi(a->y1,b->y1));}
+static int cmp(const void *av,const void *bv){const Row *a=av,*b=bv;if(a->b.score>b->b.score)return -1;if(a->b.score<b->b.score)return 1;return a->order<b->order?-1:(a->order>b->order?1:0);}
+static float offset_iou(RoadBox a,RoadBox b){float x=(float)a.cls*7680.f,y=(float)b.cls*7680.f,v;a.x1+=x;a.y1+=x;a.x2+=x;a.y2+=x;b.x1+=y;b.y1+=y;b.x2+=y;b.y2+=y;v=inter(&a,&b);return v/(area(&a)+area(&b)-v+1e-9f);}
+static int valid(const RoadBox *b){return b->cls>=0&&b->cls<4&&isfinite(b->x1)&&isfinite(b->y1)&&isfinite(b->x2)&&isfinite(b->y2)&&isfinite(b->score);}
+int road_car_refined_zoom(const RoadBox *full,int nf,const RoadBox *tiles,const int counts[3],float weight,const float *pred,float strength,float cap,float classgate,RoadBox *out,int capacity){
+ int i,j,k,t,n=0,np=0,nv=0,kept,limit;
+ if(!full||!tiles||!counts||!out||nf<0||nf>300||capacity!=300||!isfinite(weight)||weight<0.f||weight>1.f)return -1;
+ for(i=0;i<nf;i++){
+  if(!valid(full+i))return -2;
+  if(full[i].cls==0)persons[np++]=full[i];else{rows[n].b=full[i];rows[n].order=n;n++;}
+ }
+ for(t=0;t<3;t++){
+  if(counts[t]<0||counts[t]>300)return -3;
+  for(i=0;i<counts[t];i++){
+   RoadBox b=tiles[t*300+i];int reject=0;float ba;
+   if(!valid(&b))return -4;
+   if(b.cls!=1||b.score<.05f||!(b.x1>1.f&&b.y1>1.f&&b.x2<399.f&&b.y2<239.f))continue;
+   b.x1=b.x1*.35f+(float)t*130.f;b.x2=b.x2*.35f+(float)t*130.f;b.y1=b.y1*.35f+76.0f;b.y2=b.y2*.35f+76.0f;ba=area(&b);
+   for(j=0;j<nf;j++)if(full[j].cls==b.cls&&full[j].score>=.25f){float v=inter(&b,full+j),fa=area(full+j);if(v/(ba+fa-v+1e-9f)>=.3f||v/(lo(ba,fa)+1e-9f)>=.8f){reject=1;break;}}
+   if(reject)continue;
+   {const float *d=pred+(t*300+i)*5;float w=b.x2-b.x1,h=b.y2-b.y1,cx,cy,nw,nh;
+    for(k=0;k<5;k++){if(!isfinite(d[k]))return -6;}
+    if(classgate>0.f&&1.f/(1.f+expf(-d[0]))<classgate)continue;
+    cx=(b.x1+b.x2)*.5f+fmaxf(-cap,fminf(cap,d[1]))*strength*w;
+    cy=(b.y1+b.y2)*.5f+fmaxf(-cap,fminf(cap,d[2]))*strength*h;
+    nw=w*expf(fmaxf(-cap,fminf(cap,d[3]))*strength);nh=h*expf(fmaxf(-cap,fminf(cap,d[4]))*strength);
+    b.x1=fmaxf(0.f,fminf(400.f,cx-nw*.5f));b.x2=fmaxf(0.f,fminf(400.f,cx+nw*.5f));
+    b.y1=fmaxf(0.f,fminf(240.f,cy-nh*.5f));b.y2=fmaxf(0.f,fminf(240.f,cy+nh*.5f));
+    if(b.x2<=b.x1||b.y2<=b.y1)continue;
+    ba=area(&b);
+    for(j=0;j<nf;j++)if(full[j].cls==b.cls&&full[j].score>=.25f){float v=inter(&b,full+j),fa=area(full+j);if(v/(ba+fa-v+1e-9f)>=.3f||v/(lo(ba,fa)+1e-9f)>=.8f){reject=1;break;}}
+    if(reject)continue;
+   }
+   b.score*=weight;rows[n].b=b;rows[n].order=n;n++;
+  }
+ }
+ qsort(rows,(size_t)n,sizeof(Row),cmp);
+ for(i=0;i<n;i++)dead[i]=0;
+ limit=capacity-np;
+ for(i=0;i<n&&nv<limit;i++){
+  if(dead[i])continue;
+  final_rows[np+nv].b=rows[i].b;final_rows[np+nv].order=np+nv;nv++;
+  for(j=i+1;j<n;j++)if(!dead[j]&&rows[i].b.cls==rows[j].b.cls&&offset_iou(rows[i].b,rows[j].b)>.6f)dead[j]=1;
+ }
+ for(i=0;i<np;i++){final_rows[i].b=persons[i];final_rows[i].order=i;}
+ kept=np+nv;qsort(final_rows,(size_t)kept,sizeof(Row),cmp);
+ for(i=0;i<kept;i++)out[i]=final_rows[i].b;
+ return kept;
+}

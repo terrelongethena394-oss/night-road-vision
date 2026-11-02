@@ -1,0 +1,118 @@
+{
+  "status": "ACTUAL_PHOTO_UPLOAD_PROCESS_RETURN_PASS",
+  "source_kind": "photo",
+  "firmware_abi": 32,
+  "enhancement_profile": "natural_exposure_guard55",
+  "natural_exposure_bounds_checked": true,
+  "camera_bank_byte_exact": false,
+  "physical_readback": true,
+  "input_byte_exact": true,
+  "raw_average_byte_exact": true,
+  "transport_timings": {
+    "connect_ms": 1669,
+    "idle_ms": 284,
+    "upload_ms": 7214,
+    "processing_wait_and_pause_ms": 38490,
+    "readback_ms": 26749,
+    "upload_reused": 0,
+    "request_wall_seconds": 75.625
+  },
+  "frame_byte_exact": true,
+  "board_processing_seconds": 37.30297693021367,
+  "car_count": 2,
+  "roi_count": 8,
+  "pl_conv_calls": 765,
+  "source_sha256": "bd1569f1a98b1cb9befe9c308594139445288588f90fc21e78de93f8a38f454e",
+  "enhanced_payload_sha256": "628ae1930e00457339ce4aa7670c581f4372f8e186f1dcfa6e76b68351d1c23e",
+  "boxes_payload_sha256": "dfd67f7a72711a1032a56549768f3324f9b13b0c7415874b28a09019b7ef9d5b",
+  "model_fingerprints_checked": true,
+  "neural_outputs_replayed_on_PC": false,
+  "enhancement_executed_on_PC": false,
+  "sd_written": false,
+  "guard_pixels_byte_exact_to_reference": true,
+  "detector_payload_byte_exact_to_ABI31": true,
+  "firmware_load_mode": "natural32_candidate_RAM",
+  "wall_seconds": 76.26600000000326,
+  "input": {
+    "original_path": "E:\\FPGA图像处理\\道路场景验收\\测试照片\\01_深暗少车_7da2e7bc-9292f387.jpg",
+    "original_sha256": "5bd20db0ed2dbb86077a2ffa011d91bf0a0e3f6eaf75ae8113309115c958b77e",
+    "oriented_original_size": [
+      1280,
+      720
+    ],
+    "board_size": [
+      800,
+      480
+    ],
+    "resized_size": [
+      800,
+      450
+    ],
+    "padding_xy": [
+      0,
+      15
+    ],
+    "scale_xy": [
+      0.625,
+      0.625
+    ],
+    "fit": "aspect_preserving_letterbox_black",
+    "input_bgr_sha256": "bd1569f1a98b1cb9befe9c308594139445288588f90fc21e78de93f8a38f454e",
+    "input_bgr_fnv": 563287325,
+    "enhancement_output_size": [
+      400,
+      240
+    ]
+  },
+  "detections": [
+    {
+      "class_name": "car",
+      "class_id": 1,
+      "confidence": 0.43954676389694214,
+      "box_board400": [
+        159.4228057861328,
+        119.48075103759766,
+        169.5277557373047,
+        124.56957244873047
+      ],
+      "box_oriented_original": [
+        510.1529846191406,
+        358.3384094238281,
+        542.4888305664062,
+        374.62261962890625
+      ]
+    },
+    {
+      "class_name": "car",
+      "class_id": 1,
+      "confidence": 0.32626622915267944,
+      "box_board400": [
+        181.31568908691406,
+        117.4776382446289,
+        188.8550567626953,
+        122.42508697509766
+      ],
+      "box_oriented_original": [
+        580.210205078125,
+        351.9284362792969,
+        604.336181640625,
+        367.7602844238281
+      ]
+    }
+  ],
+  "packet_evidence": "E:\\FPGA_Enhance_Work\\photo_station_20261031\\jobs\\natural32_case1_20261101_011442_250e32\\packet",
+  "output": "E:\\FPGA图像处理\\结果\\natural32_case1_20261101_011442_250e32",
+  "detector_input": "raw_original_pixels_with_native_ROI_verification",
+  "enhancement_role": "board_ARM_display_enhancement",
+  "computer_role": "image_decode_resize_transfer_readback_validation_and_box_drawing_only",
+  "enhancement_or_detection_accuracy_evaluated": false,
+  "case": 1,
+  "title": "深暗少车",
+  "baseline_output": "E:\\FPGA图像处理\\道路场景验收\\板上结果\\20261101_004228_ac5e07",
+  "unchanged_payloads": {
+    "source800.bgr": true,
+    "raw.u32": true,
+    "boxes.f32": true,
+    "baseline.f32": true
+  }
+}

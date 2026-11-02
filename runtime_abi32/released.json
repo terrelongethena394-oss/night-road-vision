@@ -1,0 +1,60 @@
+{
+  "status": "NATURAL32_RELEASED_AFTER_ACTUAL_BOARD_CHECKS",
+  "application": "E:\\FPGA图像处理",
+  "comparison_folder": "E:\\FPGA图像处理\\自然增强对照",
+  "rows": [
+    {
+      "case": 1,
+      "title": "深暗少车",
+      "raw_mean_y": 9.05665397644043,
+      "old_mean_y": 73.28639221191406,
+      "natural_mean_y": 25.070140838623047,
+      "car_boxes": 2,
+      "board_seconds": 37.30297693021367,
+      "source_output": "E:\\FPGA图像处理\\结果\\natural32_case1_20261101_011442_250e32",
+      "baseline_output": "E:\\FPGA图像处理\\道路场景验收\\板上结果\\20261101_004228_ac5e07",
+      "pixels_byte_exact": true,
+      "detector_unchanged": true
+    },
+    {
+      "case": 2,
+      "title": "夜间多车",
+      "raw_mean_y": 27.419086456298828,
+      "old_mean_y": 97.7927017211914,
+      "natural_mean_y": 63.02471923828125,
+      "car_boxes": 9,
+      "board_seconds": 36.56266167768281,
+      "source_output": "E:\\FPGA图像处理\\结果\\natural32_case2_20261101_011558_0922e8",
+      "baseline_output": "E:\\FPGA图像处理\\道路场景验收\\板上结果\\20261101_004351_70ee6d",
+      "pixels_byte_exact": true,
+      "detector_unchanged": true
+    },
+    {
+      "case": 3,
+      "title": "一般夜景",
+      "raw_mean_y": 28.576520919799805,
+      "old_mean_y": 114.43572235107422,
+      "natural_mean_y": 69.92452239990234,
+      "car_boxes": 3,
+      "board_seconds": 31.495387144633774,
+      "source_output": "E:\\FPGA图像处理\\结果\\natural32_case3_20261101_011817_59b163",
+      "baseline_output": "E:\\FPGA图像处理\\道路场景验收\\板上结果\\20261101_004613_7b0cf1",
+      "pixels_byte_exact": true,
+      "detector_unchanged": true
+    },
+    {
+      "case": 4,
+      "title": "无车夜景",
+      "raw_mean_y": 15.716471672058105,
+      "old_mean_y": 76.60491180419922,
+      "natural_mean_y": 38.56303405761719,
+      "car_boxes": 0,
+      "board_seconds": 20.15714388944283,
+      "source_output": "E:\\FPGA图像处理\\结果\\natural32_case4_20261101_011720_2ab675",
+      "baseline_output": "E:\\FPGA图像处理\\道路场景验收\\板上结果\\20261101_004510_c7f5ac",
+      "pixels_byte_exact": true,
+      "detector_unchanged": true
+    }
+  ],
+  "sd_written": false
+}

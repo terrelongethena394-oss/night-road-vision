@@ -1,0 +1,2 @@
+road_camera_draw.c:23:13:text.constprop	72	static
+road_camera_draw.c:34:5:road_camera_draw	200	static

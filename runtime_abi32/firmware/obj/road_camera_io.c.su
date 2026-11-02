@@ -1,0 +1,6 @@
+road_camera_io.c:29:12:parked_source	40	static
+road_camera_io.c:20:10:rc_dma_error	0	static
+road_camera_io.c:21:5:rc_present	24	static
+road_camera_io.c:40:5:rc_snapshot	24	static
+road_camera_io.c:44:5:rc_capture_frozen	40	static
+road_camera_io.c:50:5:rc_io_init	224	static

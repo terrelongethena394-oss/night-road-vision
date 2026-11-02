@@ -1,0 +1,17 @@
+{
+  "report": "C:\\Users\\曹\\Documents\\ChatGPT\\FPGA创新设计大赛\\技术报告_中英文文献补充版_20261101\\技术报告.docx",
+  "report_sha256": "7c43674500914c74d210f732804a36eef7d5ed04116125e74c80dbd5eb4248b8",
+  "default_runtime": "ABI32",
+  "sd_runtime": "ABI30",
+  "abi32_elf_sha256": "dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80",
+  "host_source_sha256": {
+    "photo_station_core.py": "65b51f35ba44317a335957c398f0854cfaa65f99dea30357d3d66a15ef810e46",
+    "camera_station_core.py": "97f91768621b16aada49f17ad687015fa5915eeb91aea834eef6ee897f99dd71",
+    "camera_preview_stream.py": "44a780d0025050919c86b9f97e236a27d3c0bcafe4e4413e0f3ec40f0d7cbb5e",
+    "photo_station_gui.py": "3bdf2733e2e1800ea503cb0b413f50992cef2f9d101aeb18b4c4f9370108ac2c",
+    "natural_guard_lab.py": "cba21c93583cd986341ffd95e31496741b3fc7bc403e7a416aa8b6d2ec2b892c"
+  },
+  "hardware_changed": false,
+  "external_upload": false,
+  "sd_written": false
+}

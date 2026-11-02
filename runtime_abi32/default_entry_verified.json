@@ -1,0 +1,124 @@
+{
+  "status": "ACTUAL_PHOTO_UPLOAD_PROCESS_RETURN_PASS",
+  "source_kind": "photo",
+  "firmware_abi": 32,
+  "enhancement_profile": "natural_exposure_guard55",
+  "natural_exposure_bounds_checked": true,
+  "camera_bank_byte_exact": false,
+  "physical_readback": true,
+  "input_byte_exact": true,
+  "raw_average_byte_exact": true,
+  "transport_timings": {
+    "connect_ms": 1688,
+    "idle_ms": 244,
+    "upload_ms": 10264,
+    "processing_wait_and_pause_ms": 32271,
+    "readback_ms": 27149,
+    "upload_reused": 0,
+    "request_wall_seconds": 72.875
+  },
+  "frame_byte_exact": true,
+  "board_processing_seconds": 30.886438462293285,
+  "car_count": 3,
+  "roi_count": 6,
+  "pl_conv_calls": 663,
+  "source_sha256": "7ec3c9e6cbc9bb1678b5b281e5029bf4bc89a504e019b89309c24ca08bb2f5ce",
+  "enhanced_payload_sha256": "23afc50ddf2319710874e8f1684f04afbdc99cb1ee376cf73570ca38b5dd31d0",
+  "boxes_payload_sha256": "3ef4c3bc6a6c91f3f037f3347de5fef3d66fadfd0f659276e8b9baf392dde5fd",
+  "model_fingerprints_checked": true,
+  "neural_outputs_replayed_on_PC": false,
+  "enhancement_executed_on_PC": false,
+  "sd_written": false,
+  "firmware_load_mode": "reused_ABI32",
+  "wall_seconds": 80.85899999999674,
+  "input": {
+    "original_path": "E:\\FPGA图像处理\\道路场景验收\\测试照片\\03_一般夜景_55fa9c72-fa923702.jpg",
+    "original_sha256": "2fd17787d7c45d03973755b409c3bead9e735ba3f3f2fd5b201347f920f9232d",
+    "oriented_original_size": [
+      1280,
+      720
+    ],
+    "board_size": [
+      800,
+      480
+    ],
+    "resized_size": [
+      800,
+      450
+    ],
+    "padding_xy": [
+      0,
+      15
+    ],
+    "scale_xy": [
+      0.625,
+      0.625
+    ],
+    "fit": "aspect_preserving_letterbox_black",
+    "input_bgr_sha256": "7ec3c9e6cbc9bb1678b5b281e5029bf4bc89a504e019b89309c24ca08bb2f5ce",
+    "input_bgr_fnv": 2419340629,
+    "enhancement_output_size": [
+      400,
+      240
+    ]
+  },
+  "detections": [
+    {
+      "class_name": "car",
+      "class_id": 1,
+      "confidence": 0.41646987199783325,
+      "box_board400": [
+        45.263038635253906,
+        117.11997985839844,
+        63.476951599121094,
+        125.94108581542969
+      ],
+      "box_oriented_original": [
+        144.8417205810547,
+        350.783935546875,
+        203.12625122070312,
+        379.011474609375
+      ]
+    },
+    {
+      "class_name": "car",
+      "class_id": 1,
+      "confidence": 0.34921926259994507,
+      "box_board400": [
+        77.0216293334961,
+        120.18724060058594,
+        92.7182846069336,
+        127.64515686035156
+      ],
+      "box_oriented_original": [
+        246.46920776367188,
+        360.59918212890625,
+        296.6985168457031,
+        384.4645080566406
+      ]
+    },
+    {
+      "class_name": "car",
+      "class_id": 1,
+      "confidence": 0.2761012613773346,
+      "box_board400": [
+        76.89543914794922,
+        122.56105041503906,
+        89.72840881347656,
+        127.72288513183594
+      ],
+      "box_oriented_original": [
+        246.06539916992188,
+        368.19537353515625,
+        287.13092041015625,
+        384.7132263183594
+      ]
+    }
+  ],
+  "packet_evidence": "E:\\FPGA_Enhance_Work\\photo_station_20261031\\jobs\\20261101_012239_5f7c64\\packet",
+  "output": "E:\\FPGA图像处理\\结果\\20261101_012239_5f7c64",
+  "detector_input": "raw_original_pixels_with_native_ROI_verification",
+  "enhancement_role": "board_ARM_display_enhancement",
+  "computer_role": "image_decode_resize_transfer_readback_validation_and_box_drawing_only",
+  "enhancement_or_detection_accuracy_evaluated": false
+}

@@ -1,0 +1,7 @@
+emio_sccb_cfg.c:30:6:emio_init	8	static
+emio_sccb_cfg.c:54:6:sccb_start	8	static
+emio_sccb_cfg.c:67:6:sccb_stop	8	static
+emio_sccb_cfg.c:83:6:sccb_send_byte	16	static
+emio_sccb_cfg.c:108:5:sccb_rece_byte	16	static
+emio_sccb_cfg.c:134:6:sccb_ack	8	static
+emio_sccb_cfg.c:155:6:sccb_host_no_ack	8	static

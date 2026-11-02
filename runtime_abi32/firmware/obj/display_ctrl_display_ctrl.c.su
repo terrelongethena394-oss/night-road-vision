@@ -1,0 +1,5 @@
+display_ctrl.c:88:5:DisplayStop	8	static
+display_ctrl.c:129:5:DisplayStart	64	static
+display_ctrl.c:215:7:DisplayInitialize	16	static
+display_ctrl.c:261:5:DisplaySetMode	16	static
+display_ctrl.c:292:5:lcd_id_read	8	static

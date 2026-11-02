@@ -1,0 +1,27 @@
+{
+  "status": "NATURAL32_DESKTOP_AND_BOARD_DELIVERY_VERIFIED",
+  "actual_board_cases": 4,
+  "camera_bank_byte_exact": true,
+  "all_four_detector_payloads_unchanged": true,
+  "guard_output_byte_exact": true,
+  "lcd_byte_exact": true,
+  "source_sha256": {
+    "photo_station_core.py": "65b51f35ba44317a335957c398f0854cfaa65f99dea30357d3d66a15ef810e46",
+    "camera_station_core.py": "97f91768621b16aada49f17ad687015fa5915eeb91aea834eef6ee897f99dd71",
+    "camera_preview_stream.py": "44a780d0025050919c86b9f97e236a27d3c0bcafe4e4413e0f3ec40f0d7cbb5e",
+    "photo_station_gui.py": "3bdf2733e2e1800ea503cb0b413f50992cef2f9d101aeb18b4c4f9370108ac2c",
+    "natural_guard_lab.py": "cba21c93583cd986341ffd95e31496741b3fc7bc403e7a416aa8b6d2ec2b892c"
+  },
+  "gui_visual_check": "Unannotated original left, natural board image and existing car boxes right, natural enhancement status shown.",
+  "default_runtime": {
+    "status": "ACTUAL_BOARD_PHOTO_CAMERA_VERIFIED",
+    "root": "E:\\FPGA_Enhance_Work\\natural_exposure_guard_20261101_r1",
+    "version": 32,
+    "proof_sha256": "22b59855681e3a2520fbd16767b3d36334a4a4695a66886274d5ef4fd257204f",
+    "elf_sha256": "dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80",
+    "sd_written": false
+  },
+  "models_changed": false,
+  "detection_accuracy_gain_claimed": false,
+  "sd_written": false
+}

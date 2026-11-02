@@ -1,0 +1,4 @@
+road_roi_guard.c:14:12:compare	0	static
+road_roi_guard.c:20:6:road_roi_from_bgr800	28	static
+road_roi_guard.c:27:5:road_roi_map400	56	static
+road_roi_guard.c:41:5:road_roi_fuse	19928	static

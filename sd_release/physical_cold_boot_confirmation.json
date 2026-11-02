@@ -1,0 +1,11 @@
+{
+  "status": "USER_CONFIRMED_TWO_SD_INDEPENDENT_COLD_STARTS",
+  "response": "两次都能独立显示道路图、增强图和汽车框",
+  "instructed_conditions": "Board power off before BOOT_CFG OFF/OFF, SD/camera/LCD connected, JTAG disconnected at board, independent power on; repeat power-off/on without PC download.",
+  "physical_sd_cold_boot_verified": true,
+  "user_reported_two_independent_power_cycles_passed": true,
+  "verification_method": "User observation of physical standalone boots, not an automated claim of JTAG readback after reboot.",
+  "boot_sha256": "f0ba7b13d56b88e5470afb5c54c2a7b3c51934b53111e93017e79b5c6cdb9770",
+  "sd_written": true,
+  "flash_written": false
+}

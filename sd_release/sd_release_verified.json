@@ -1,0 +1,19 @@
+{
+  "status": "ABI30_SD_RELEASE_DEPLOYED_AND_TWO_COLD_STARTS_USER_CONFIRMED",
+  "boot_sha256": "f0ba7b13d56b88e5470afb5c54c2a7b3c51934b53111e93017e79b5c6cdb9770",
+  "boot_bytes": 19681872,
+  "program_elf_sha256": "57a0ea8434ddc7191a8e51fed76cadb9b7d3455f86c7578d30c1166e5f0fd251",
+  "complete_sd_boot_file_readback_verified": true,
+  "physical_sd_cold_boot_verified": true,
+  "old_active_boot_removed": true,
+  "old_historical_backup_removed": true,
+  "pc_recovery_backups": [
+    "E:\\FPGA_Enhance_Work\\photo_station_sd_20261031_r1\\old_boot_backup\\BOOT.BIN.original",
+    "E:\\FPGA_Enhance_Work\\photo_station_sd_20261031_r1\\old_boot_backup\\B0000001.BIN.original"
+  ],
+  "sd_root_after_cleanup": "SYSTEM~1\tD\t0\nBOOT.BIN\tF\t19681872\n",
+  "sd_written": true,
+  "flash_written": false,
+  "detection_mode": "RAW image plus native ROI verification; enhancement for display only",
+  "default_power_on_view": "Fixed embedded night road original/enhanced/car boxes; host photo upload remains available via JTAG"
+}

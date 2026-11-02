@@ -1,0 +1,8 @@
+{
+  "status": "ACTUAL_BOARD_PHOTO_CAMERA_VERIFIED",
+  "root": "E:\\FPGA_Enhance_Work\\natural_exposure_guard_20261101_r1",
+  "version": 32,
+  "proof_sha256": "22b59855681e3a2520fbd16767b3d36334a4a4695a66886274d5ef4fd257204f",
+  "elf_sha256": "dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80",
+  "sd_written": false
+}

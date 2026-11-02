@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+ [bootloader] fsbl.elf
+ display.bit
+ photo_station_sd.elf
+}

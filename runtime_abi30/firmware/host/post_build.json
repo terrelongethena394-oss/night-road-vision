@@ -1,0 +1,20 @@
+{
+  "command": [
+    "E:\\Xilinx\\Vitis_HLS\\2020.2\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe",
+    "-shared",
+    "-O2",
+    "-std=c99",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-msse2",
+    "-mfpmath=sse",
+    "-IE:\\FPGA_Enhance_Work\\road_car_roi_delivery_20261031_r1\\board_candidate\\firmware\\source",
+    "E:\\FPGA_Enhance_Work\\road_car_roi_delivery_20261031_r1\\board_candidate\\firmware\\source\\road_fp32.c",
+    "E:\\FPGA_Enhance_Work\\road_car_roi_delivery_20261031_r1\\board_candidate\\firmware\\host\\post_stub.c",
+    "-lm",
+    "-o",
+    "E:\\FPGA_Enhance_Work\\road_car_roi_delivery_20261031_r1\\board_candidate\\firmware\\host\\post.dll"
+  ],
+  "dll_sha256": "2077ed02278382744364a0e7c1ec2575fbcae2fa37becff27db9559644f670dc",
+  "nms_source_sha256": "055932773efa30c8ea7a79d899a4bbd9d99dcf23a24a60292dec4e7564ab6147"
+}

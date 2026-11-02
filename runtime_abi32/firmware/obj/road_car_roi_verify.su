@@ -1,0 +1,2 @@
+road_car_roi_verify.c:12:5:road_roi_plan	1280	static
+road_car_roi_verify.c:32:5:road_roi_refine	184	static

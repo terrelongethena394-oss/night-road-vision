@@ -1,0 +1,42 @@
+[
+  {
+    "old": "support/downstream/验证与展示说明.md",
+    "new": "support/downstream/report_26e1b205b4.md"
+  },
+  {
+    "old": "support/downstream/识别升级当前进度_20261026.md",
+    "new": "support/downstream/report_c08b4a92ad.md"
+  },
+  {
+    "old": "support/downstream/识别下一步数据与训练安排.md",
+    "new": "support/downstream/report_66bf3d2abb.md"
+  },
+  {
+    "old": "runtime_abi30/report/验收与效果说明.md",
+    "new": "runtime_abi30/report/report_1bfdf47ddf.md"
+  },
+  {
+    "old": "runtime_abi30/report/操作与恢复.md",
+    "new": "runtime_abi30/report/report_9f30869415.md"
+  },
+  {
+    "old": "host/启动图片处理.cmd",
+    "new": "host/start_original_environment.cmd"
+  },
+  {
+    "old": "host/使用说明.md",
+    "new": "host/usage.md"
+  },
+  {
+    "old": "docs/验收记录.md",
+    "new": "docs/report_c645cea0b6.md"
+  },
+  {
+    "old": "docs/验收与效果说明.md",
+    "new": "docs/report_1bfdf47ddf.md"
+  },
+  {
+    "old": "docs/SD启动步骤.md",
+    "new": "docs/report_b7fb2db563.md"
+  }
+]

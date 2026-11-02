@@ -1,0 +1,16 @@
+{
+  "status": "NATURAL55_FROZEN_BEFORE_ARM_TESTS",
+  "profile": {
+    "gamma": 0.55,
+    "gain": 5.5,
+    "black": 12,
+    "highlight_low": 130,
+    "highlight_high": 245
+  },
+  "lut_fnv": 2889607755,
+  "reason": "Manual inspection of two computer prototypes on four exposed diagnostic cases; retain visibility with less extreme shadow amplification.",
+  "quality_scope": "Exposed-case visual engineering selection, not independent PSNR/SSIM or detection accuracy evidence.",
+  "model_changed": false,
+  "detector_changed": false,
+  "sd_written": false
+}

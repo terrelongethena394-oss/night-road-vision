@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.Xil/
+*.jou
+*.log
+*.o
+jobs/
+outputs/
+.venv/
+.env

@@ -1,0 +1,4 @@
+WNS=0.159
+WHS=0.022
+ROAD_CONV_DSP=105
+hardware_downloaded=false
