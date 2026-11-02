@@ -8765,8 +8765,8 @@
     },
     {
       "path": "docs/published_artifacts.json",
-      "bytes": 1883,
-      "sha256": "f9c661acfe158ec94bf8a372d7ade717007b6ede58c9d036e81494b94f1c7a3e"
+      "bytes": 1859,
+      "sha256": "8b4151fbab6e4e3428fd7aeb5e0b729e99809e62a79a970b6dae89d432b5d90e"
     },
     {
       "path": "docs/restore_release_artifacts.py",
@@ -8796,19 +8796,19 @@
   "external_artifacts": [
     {
       "path": "runtime_abi32/firmware/road_detail.elf",
-      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/runtime_abi32__firmware__road_detail.elf",
+      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/runtime_abi32__firmware__road_detail.elf",
       "sha256": "dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80",
       "bytes": 16443720
     },
     {
       "path": "sd_release/BOOT.BIN",
-      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/sd_release__BOOT.BIN",
+      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/sd_release__BOOT.BIN",
       "sha256": "f0ba7b13d56b88e5470afb5c54c2a7b3c51934b53111e93017e79b5c6cdb9770",
       "bytes": 19681872
     },
     {
       "path": "sd_release/photo_station_sd.elf",
-      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/sd_release__photo_station_sd.elf",
+      "url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/sd_release__photo_station_sd.elf",
       "sha256": "57a0ea8434ddc7191a8e51fed76cadb9b7d3455f86c7578d30c1166e5f0fd251",
       "bytes": 16438260
     }

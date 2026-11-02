@@ -7,7 +7,7 @@
       "name": "runtime_abi32__firmware__road_detail.elf",
       "id": 702446790,
       "bytes": 16443720,
-      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/runtime_abi32__firmware__road_detail.elf",
+      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/runtime_abi32__firmware__road_detail.elf",
       "git_blob_sha": "493ef5d8cd530fc3df64da1477f3211fc65c8b17",
       "sha256": "dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80",
       "server_digest": "sha256:dae88aea72b3838fedd5147805f6f1060f8122bfaf156f662ff99d8833a49c80"
@@ -17,7 +17,7 @@
       "name": "sd_release__BOOT.BIN",
       "id": 702447965,
       "bytes": 19681872,
-      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/sd_release__BOOT.BIN",
+      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/sd_release__BOOT.BIN",
       "git_blob_sha": "0ead141519149273fb8c097b072b65bdbb16e4f2",
       "sha256": "f0ba7b13d56b88e5470afb5c54c2a7b3c51934b53111e93017e79b5c6cdb9770",
       "server_digest": "sha256:f0ba7b13d56b88e5470afb5c54c2a7b3c51934b53111e93017e79b5c6cdb9770"
@@ -27,7 +27,7 @@
       "name": "sd_release__photo_station_sd.elf",
       "id": 702449979,
       "bytes": 16438260,
-      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/untagged-3d0d6ba5041676d9dff8/sd_release__photo_station_sd.elf",
+      "download_url": "https://github.com/terrelongethena394-oss/night-road-vision/releases/download/report-abi32-20261101/sd_release__photo_station_sd.elf",
       "git_blob_sha": "cec47aec477b9097d800559edc4c8d8928a0dd39",
       "sha256": "57a0ea8434ddc7191a8e51fed76cadb9b7d3455f86c7578d30c1166e5f0fd251",
       "server_digest": "sha256:57a0ea8434ddc7191a8e51fed76cadb9b7d3455f86c7578d30c1166e5f0fd251"
